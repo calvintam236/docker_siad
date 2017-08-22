@@ -15,7 +15,7 @@ $ docker volume create --name siad
 Run in background:
 
 ```console
-$ docker run -v siad:/siad -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YOUR_PORT_3:YOUR_PORT_1-YOUR_PORT_3 calvintam236/siad --api-addr :YOUR_PORT_1 --host-addr :YOUR_PORT_3 -M gctwh --rpc-addr :YOUR_PORT_2 --sia-directory /siad
+$ docker run -v siad:/siad -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YOUR_PORT_3:YOUR_PORT_1-YOUR_PORT_3 calvintam236/siad --api-addr :YOUR_PORT_1 --host-addr :YOUR_PORT_3 -M gctwh --rpc-addr :YOUR_PORT_2 -d /siad
 ```
 
 Get `siad` options with:

@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 MAINTAINER calvintam236 <calvintam236@users.noreply.github.com>
-LABEL description="SiaD in Docker. Supports HDD mining."
+LABEL description="SiaD in Docker. Supports CPU & HDD mining."
 
 WORKDIR /tmp
 
