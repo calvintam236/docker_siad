@@ -21,7 +21,7 @@ $ docker run -v siad:/siad -d --name YOUR_CONTAINER_NAME -p YOUR_PORT_1-YOUR_POR
 Get `siad` options with:
 
 ```console
-$ docker run --rm calvintam236/siad -h
+$ docker run --rm calvintam236/siad
 ```
 
 Fetch logs of a container:
