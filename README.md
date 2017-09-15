@@ -1,6 +1,6 @@
 # What is SiaD?
 
-SiaD is the console miner provided by [NebulousLabs](https://github.com/NebulousLabs/Sia).
+SiaD is the console full node & miner provided by [NebulousLabs](https://github.com/NebulousLabs/Sia).
 
 SiaD supports Siacoin (SC).
 
