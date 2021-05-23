@@ -16,7 +16,7 @@ apt-get update \
 && unzip Sia-v1.3.7-linux-amd64.zip \
 && mv Sia-v1.3.7-linux-amd64/siad /usr/local/bin/ \
 && chmod +x /usr/local/bin/siad \
-&& rm -r *
+&& rm -r * \
 && apt-get -y --auto-remove purge unzip
 
 ENTRYPOINT ["siad"]
