@@ -1,0 +1,23 @@
+FROM debian:buster-slim
+
+LABEL maintainer="calvintam236"
+LABEL description="SiaD in Docker. Full node. Supports CPU & HDD mining."
+
+WORKDIR /tmp/
+
+ADD \
+https://github.com/NebulousLabs/Sia/releases/download/v1.3.7/Sia-v1.3.7-linux-amd64.zip \
+.
+
+RUN \
+apt-get update \
+&& apt-get -y --no-install-recommends install unzip \
+&& rm -rf /var/lib/apt/lists/* \
+&& unzip Sia-v1.3.7-linux-amd64.zip \
+&& mv Sia-v1.3.7-linux-amd64/siad /usr/local/bin/ \
+&& chmod +x /usr/local/bin/siad \
+&& rm -r *
+&& apt-get -y --auto-remove purge unzip
+
+ENTRYPOINT ["siad"]
+CMD ["--help"]
