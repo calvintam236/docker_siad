@@ -6,7 +6,7 @@ LABEL description="SiaD in Docker. Full node. Supports CPU & HDD mining."
 WORKDIR /tmp/
 
 ADD \
-https://github.com/NebulousLabs/Sia/releases/download/v1.3.7/Sia-v1.3.7-linux-amd64.zip \
+https://sia.tech/releases/Sia-v1.3.7-linux-amd64.zip \
 .
 
 RUN \
